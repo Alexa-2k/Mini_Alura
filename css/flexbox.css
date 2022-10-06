@@ -1,0 +1,131 @@
+.headerPrincipal .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerPrincipal-nav {
+    display: flex;
+}
+
+ .rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center; 
+    /* items alineados verticalmente sobre misma línea*/ 
+    justify-content: space-around;
+    width: 70%;
+    margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+
+}
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    flex-wrap: wrap;
+}
+
+.contenidoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenidoPrincipal-cursos-link { 
+    display: flex;
+    width: 23%;
+}
+
+.videoSobre .container {
+    display: flex;
+}
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.videoSobre-video {
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 2;
+}
+
+/* Responsive */
+@media screen and (max-device-width:769px), screen and (max-width:799px){
+    .navmap-list-title-bancoDeDados {
+        width: 23%;
+} 
+}
+/*corrige overflow de la columna "Bases de datos" en el mapa de cursos */
+
+
+@media (max-width:768px) {
+
+.headerPrincipal .container {
+    flex-direction: column;
+    align-items: initial;
+    text-align: center;
+}
+
+.headerPrincipal-nav {
+    flex-direction: column;
+}
+
+.contenidoPrincipal-cursos-link {
+    flex-direction: column;
+    width: 100%;
+}
+
+.rodapePrincipal-navMap-list {
+    height: auto;
+    flex-wrap: wrap;
+    
+}
+
+.rodapePrincipal-navMap-link {
+    flex-direction: row;
+}
+
+
+
+.rodapePrincipal-patrocinadores .container {
+    flex-direction: column;
+}
+
+.rodapePrincipal-contatoForm {
+    width: 100%;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    justify-content: center;
+}
+
+.headerPrincipal-nav-link-app {
+    order: -1;
+}
+
+.videoSobre .container {
+    flex-direction: column;
+}
+}
